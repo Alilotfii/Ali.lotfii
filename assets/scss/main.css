@@ -1,5 +1,101 @@
-@use 'base' as *;
-@use 'abstracts' as *;
-@use 'components' as *;
-@use 'layout' as *;
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #444451;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+.title_base {
+  font-size: 3rem;
+}
+
+.text_base {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  padding: 2rem 0;
+}
+
+.btn {
+  background-color: #fa5a57;
+  padding: 1rem 4.5rem;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0.1rem solid #fa5a57;
+}
+.btn a {
+  color: #fff;
+}
+.btn:hover {
+  border: 0.1rem solid #fa5a57;
+  background-color: transparent;
+}
+.btn:hover a {
+  color: #fa5a57;
+}
+
+.btn_light {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  background-color: #f7f7f7;
+  color: #222;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.btn_light:hover {
+  box-shadow: none;
+  background-color: transparent;
+  border: 0.1rem solid #93939b;
+  color: #93939b;
+}
+
+.btn_blue {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: 0.1rem solid transparent;
+  transition: 0.3s;
+  background-color: #5267de;
+  color: #fff;
+}
+.btn_blue:hover {
+  border: 0.1rem solid #5267de;
+  background-color: transparent;
+  color: #5267de;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}/*# sourceMappingURL=main.css.map */

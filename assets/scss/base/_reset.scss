@@ -1,28 +1,18 @@
-@use "../abstracts/" as *;
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s;
-  font-family: "Nunito", sans-serif;
-  text-transform: capitalize;
+  transition: .3s;
 }
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7.5rem;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-}
-html,
-body {
-  position: relative;
-  height: 100%;
 }
 
 ul {
@@ -31,15 +21,23 @@ ul {
 
 a {
   text-decoration: none;
-  color: #111;
   font-size: 1.5rem;
+  color: #444451;
+  transition: 0.3s;
+  display: inline-block;
 }
 
-// img {
-//   width: 100%;
-//   max-width: 100%;
-// }
-.copy_right {
-  margin-top: 2rem;
-  color: #fff;
+img {
+  width: 100%;
+}
+
+//  title & text
+.title_base {
+  font-size: 3rem;
+}
+
+.text_base {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  padding: 2rem 0;
 }
