@@ -42,23 +42,23 @@ img {
 }
 
 .btn {
-  background-color: #fa5a57;
+  background-color: #ff014f;
   padding: 1rem 4.5rem;
   font-size: 1.8rem;
   border-radius: 0.8rem;
   cursor: pointer;
   transition: 0.3s;
-  border: 0.1rem solid #fa5a57;
+  border: 0.1rem solid #ff014f;
 }
 .btn a {
   color: #fff;
 }
 .btn:hover {
-  border: 0.1rem solid #fa5a57;
+  border: 0.1rem solid #ff014f;
   background-color: transparent;
 }
 .btn:hover a {
-  color: #fa5a57;
+  color: #ff014f;
 }
 
 .btn_light {
@@ -74,8 +74,8 @@ img {
 .btn_light:hover {
   box-shadow: none;
   background-color: transparent;
-  border: 0.1rem solid #93939b;
-  color: #93939b;
+  border: 0.1rem solid #e1e1e1;
+  color: #e1e1e1;
 }
 
 .btn_blue {
@@ -85,29 +85,29 @@ img {
   display: inline-block;
   border: 0.1rem solid transparent;
   transition: 0.3s;
-  background-color: #5267de;
+  background-color: blue;
   color: #fff;
 }
 .btn_blue:hover {
-  border: 0.1rem solid #5267de;
+  border: 0.1rem solid blue;
   background-color: transparent;
-  color: #5267de;
+  color: 0;
 }
 
 .container {
   width: 100%;
-  max-width: 1370px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 header {
-  background-color: #212529;
+  background-color: #212428;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
+  opacity: 0.95;
   z-index: 999;
-  opacity: 1;
 }
 header .nav_bar {
   display: flex;
@@ -149,5 +149,88 @@ header .nav_bar .bottom {
   header .container .bottom {
     display: block;
     color: #fff;
+  }
+}
+.Home {
+  padding-top: 10rem;
+}
+.Home .container {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+.Home .container .content {
+  flex: 1;
+  color: #fff;
+}
+.Home .container .content h4 {
+  font-size: 1.5rem;
+}
+.Home .container .content h1 {
+  font-size: 4.5rem;
+  padding: 1rem 0;
+}
+.Home .container .content .title .text_title-red {
+  color: #ff014f;
+}
+.Home .container .content .text {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.Home .container .content .items {
+  margin-top: 4rem;
+  display: flex;
+  gap: 6rem;
+}
+.Home .container .content .items .item h3 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.Home .container .content .items .item a {
+  padding: 15px 20px;
+  background-color: transparent;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+.Home .container .content .items .item a svg {
+  font-size: 2.5rem;
+  transition: 0.1s;
+}
+.Home .container .content .items .item a:hover {
+  color: #ff014f;
+  transform: translateY(20deg);
+}
+.Home .container .content .items .item .icons {
+  display: flex;
+  gap: 2rem;
+}
+.Home .image {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+.Home .image img {
+  height: 56rem;
+}
+.Home .image .box-image {
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  height: 36.5rem;
+  position: absolute;
+  background: transparent;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: -1;
+  top: 20rem;
+}
+
+@media (max-width: 1024px) {
+  .Home .container {
+    flex-direction: column;
+  }
+  .Home .container .items {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,92 @@
+@use "../abstracts/" as *;
+.Home {
+    padding-top: 10rem;
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        .content {
+            flex: 1;
+            color: #fff;
+            h4 {
+                font-size: 1.5rem;
+            }
+            h1 {
+                font-size: 4.5rem;
+                padding: 1rem 0;
+            }
+            .title {
+                .text_title-red {
+                    color: $red-color;
+                }
+            }
+            .text {
+                font-size: 1.5rem;
+                line-height: 3rem;
+            }
+            .items {
+                margin-top: 4rem;
+                display: flex;
+                gap: 6rem;
+                .item {
+                    h3 {
+                        padding-bottom: 1rem;
+                        font-size: 1.5rem;
+                    }
+                    a {
+                        padding: 15px 20px;
+                        background-color: transparent;
+                        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+                        gap: 2rem;
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            font-size: 2.5rem;
+                            transition: 0.1s;
+                        }
+                        &:hover {
+                            color: $red-color;
+                            transform: translateY(20deg);
+                        }
+                    }
+                    .icons {
+                        display: flex;
+                        gap: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .image {
+        position: relative;
+
+        flex: 1;
+        text-align: center;
+        img {
+            height: 56rem;
+        }
+        .box-image {
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+            height: 36.5rem;
+            position: absolute;
+            background: transparent;
+            right: 0;
+            left: 0;
+            text-align: center;
+            z-index: -1;
+            top: 20rem;
+        }
+    }
+}
+//  responsive
+@media (max-width: 1024px) {
+    .Home {
+        .container {
+            flex-direction: column;
+            .items {
+                flex-direction: column;
+            }
+        }
+    }
+}
