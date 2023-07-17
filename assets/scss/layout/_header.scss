@@ -1,3 +1,59 @@
 @use "../abstracts/" as *;
 header {
+  background-color: $black-color;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  opacity: 1;
+  .nav_bar {
+    @include flex(space-between, center);
+    padding: 5px 0;
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+      }
+      span {
+        a {
+          color: #ff014f;
+        }
+      }
+    }
+    .nav_list {
+      display: flex;
+      .nav_item {
+        padding: 2rem;
+        a{
+          &:hover{
+            color:#ff014f;
+          }
+        }
+      }
+    }
+    .bottom {
+      display: none;
+    }
+  }
+}
+//  responsive
+@media (max-width: 991px) {
+  header {
+    .container {
+      .nav_list {
+        display: none;
+      }
+      .bottom {
+        display: block;
+        color: #fff;
+      }
+    }
+  }
 }
