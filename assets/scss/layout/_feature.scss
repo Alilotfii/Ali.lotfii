@@ -1,0 +1,61 @@
+@use "../abstracts/" as *;
+.features {
+    margin-top: 5rem;
+    color: #fff;
+    .container {
+        .subject {
+            text-align: center;
+            h4 {
+                color: $red-color;
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 4rem;
+                padding-bottom: 3rem;
+            }
+        }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+            .col {
+                padding: 2.5rem;
+                background-color: transparent;
+                box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+
+                .run {
+                    display: grid;
+                    grid-template-columns: 100px, 1fr;
+                }
+                .svg-class {
+                    font-size: 5rem;
+                    svg {
+                        color: $red-color;
+                    }
+                }
+                .title {
+                    padding-bottom: 1rem;
+                    font-size: 2rem;
+                }
+                .text {
+                    font-size: 1.3rem;
+                    line-height: 2.5rem;
+                }
+                &:hover {
+                    background: linear-gradient(0deg, $black-color, black 80%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .features {
+        .container {
+            .row {
+                grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+            }
+        }
+    }
+}

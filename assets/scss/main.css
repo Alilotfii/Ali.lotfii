@@ -236,4 +236,57 @@ header .nav_bar .bottom {
   .Home .container .items {
     flex-direction: column;
   }
+}
+.features {
+  margin-top: 5rem;
+  color: #fff;
+}
+.features .container .subject {
+  text-align: center;
+}
+.features .container .subject h4 {
+  color: #ff014f;
+  font-size: 1.5rem;
+}
+.features .container .subject h2 {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+.features .container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.features .container .row .col {
+  padding: 2.5rem;
+  background-color: transparent;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.features .container .row .col .run {
+  display: grid;
+  grid-template-columns: 100px, 1fr;
+}
+.features .container .row .col .svg-class {
+  font-size: 5rem;
+}
+.features .container .row .col .svg-class svg {
+  color: #ff014f;
+}
+.features .container .row .col .title {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.features .container .row .col .text {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+.features .container .row .col:hover {
+  background: linear-gradient(0deg, #212428, black 80%);
+}
+
+@media (max-width: 1024px) {
+  .features .container .row {
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  }
 }/*# sourceMappingURL=main.css.map */
