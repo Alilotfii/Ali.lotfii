@@ -3,17 +3,8 @@
     margin-top: 5rem;
     color: #fff;
     .container {
-        .subject {
-            text-align: center;
-            h4 {
-                color: $red-color;
-                font-size: 1.5rem;
-            }
-            h2 {
-                font-size: 4rem;
-                padding-bottom: 3rem;
-            }
-        }
+        border-bottom: 0.2rem solid black;
+        padding-bottom: 4rem;
         .row {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -45,16 +36,6 @@
                 &:hover {
                     background: linear-gradient(0deg, $black-color, black 80%);
                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 1024px) {
-    .features {
-        .container {
-            .row {
-                grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
             }
         }
     }

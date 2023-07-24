@@ -30,14 +30,20 @@ img {
   width: 100%;
 }
 
-.title_base {
-  font-size: 3rem;
+.subject {
+  text-align: center;
 }
 
-.text_base {
-  font-size: 1.4rem;
-  line-height: 3rem;
-  padding: 2rem 0;
+.subject h2 {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
+.subject h4 {
+  color: #ff014f;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 .btn {
@@ -281,16 +287,9 @@ header .nav_bar .bottom {
   margin-top: 5rem;
   color: #fff;
 }
-.features .container .subject {
-  text-align: center;
-}
-.features .container .subject h4 {
-  color: #ff014f;
-  font-size: 1.5rem;
-}
-.features .container .subject h2 {
-  font-size: 4rem;
-  padding-bottom: 3rem;
+.features .container {
+  border-bottom: 0.2rem solid black;
+  padding-bottom: 4rem;
 }
 .features .container .row {
   display: grid;
@@ -325,8 +324,64 @@ header .nav_bar .bottom {
   background: linear-gradient(0deg, #212428, black 80%);
 }
 
-@media (max-width: 1024px) {
-  .features .container .row {
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-  }
+.projects .container {
+  padding-top: 5rem;
+}
+.projects .container .row {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.projects .container .col {
+  padding: 2.5rem;
+  background-color: transparent;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.projects .container .col .image {
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.projects .container .col .image img {
+  width: 100%;
+  transition: 1s;
+}
+.projects .container .col .image img:hover {
+  transform: translateY(calc(300px - 100%));
+}
+.projects .container .col .content {
+  margin-top: 1.5rem;
+}
+.projects .container .col .content .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .container .col .content .flex .title {
+  color: #ff014f;
+  font-size: 1.5rem;
+}
+.projects .container .col .content .items a {
+  margin-right: 0.3rem;
+}
+.projects .container .col .content .items i {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #111;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.projects .container .col .content .items i:hover {
+  color: #ff014f;
+}
+.projects .container .col .content .text {
+  margin-top: 1rem;
+  color: #e1e1e1;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=main.css.map */
