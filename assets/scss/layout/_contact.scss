@@ -1,10 +1,12 @@
 @use "../abstracts/" as *;
 .contact {
     .container {
+        border-bottom: 0.1rem solid black;
         margin-top: 5rem;
         .row {
             display: flex;
             gap: 3rem;
+            margin-bottom: 8rem;
         }
         .col_image {
             flex: 1;
@@ -82,7 +84,7 @@
                     gap: 2rem;
                     display: flex;
                     align-items: center;
-
+                    font-size: 2.3rem;
                     &:hover {
                         animation: shake 0.5s;
                         color: $red-color;
@@ -110,6 +112,7 @@
                     margin-top: 0.5rem;
                     color: #fff;
                     padding-left: 20px;
+                    font-size: 1.7rem;
                 }
                 label {
                     margin-top: 2rem;
@@ -139,8 +142,8 @@
                 gap: 3rem;
                 flex-direction: column;
             }
-            .col_forms{
-                .grid{
+            .col_forms {
+                .grid {
                     display: block;
                 }
             }
