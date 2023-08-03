@@ -6,7 +6,7 @@ header {
     0 0.4rem 0.6rem -0.4rem rgb(0 0 0 / 0.1);
   position: fixed;
   width: 100%;
-  opacity: 0.95;
+  opacity: 0.99;
   z-index: 999;
   .nav_bar {
     @include flex(space-between, center);
@@ -14,13 +14,18 @@ header {
     h2 {
       display: flex;
       align-items: center;
-      gap: 2rem;
-      img {
+      gap: 1rem;
+      .image {
         height: 6rem;
         width: 6rem;
-        border-radius: 50%;
-        border: 0.1rem solid #fff;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          border: 0.1rem solid #fff;
+        }
       }
+
       span {
         a {
           color: #ff014f;
@@ -32,9 +37,9 @@ header {
       display: flex;
       .nav_item {
         padding: 2rem;
-        a{
-          &:hover{
-            color:#ff014f;
+        a {
+          &:hover {
+            color: #ff014f;
           }
         }
       }
