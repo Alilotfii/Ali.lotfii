@@ -1,6 +1,5 @@
 @use "../abstracts/" as *;
 .testimonial {
-    padding-top: 5rem;
     .container {
         border-bottom: 0.1rem solid black;
         padding-bottom: 4rem;
@@ -14,21 +13,21 @@
                 padding: 3rem;
                 border-radius: 0.5rem;
                 background-color: #1e2125;
-                img{
+                img {
                     border-radius: 0.5rem;
                     padding-bottom: 1.5rem;
                     height: 28rem;
                 }
-                .text_subject_team{
+                .text_subject_team {
                     color: $red-color;
                     font-size: 1.3rem;
                     font-weight: 100;
                 }
-                .name_title{
+                .name_title {
                     color: $blue-color;
                     font-size: 2.5rem;
                 }
-                .job_title{
+                .job_title {
                     font-size: 1.3rem;
                     color: $blue-color;
                 }
@@ -77,16 +76,16 @@
         }
     }
 }
-//  responsive 
-@media (max-width:991px) {
-    .testimonial{
-        .container{
-            .row{
+//  responsive
+@media (max-width: 991px) {
+    .testimonial {
+        .container {
+            .row {
                 display: block;
-                .col_content{
+                .col_content {
                     margin-top: 5rem;
-                    .svg{
-                            display: none;
+                    .svg {
+                        display: none;
                     }
                 }
             }
