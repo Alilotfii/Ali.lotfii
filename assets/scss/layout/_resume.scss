@@ -90,27 +90,26 @@
                             font-size: 1.3rem;
                         }
                         &:hover {
-                      
                             padding: 1rem 2rem;
                             a {
                                 color: $red-color;
                             }
                         }
                     }
-                    .button1{
+                    .button1 {
                         text-align: center;
                         cursor: pointer;
                         padding: 1rem 2.1rem;
                         box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.35);
                         span {
                             font-size: 1.3rem;
+                            a {
+                                color: $red-color;
+                            }
                         }
                         &:hover {
                             border: 0.1rem solid $red-color;
                             padding: 1rem 2rem;
-                            a {
-                                color: $red-color;
-                            }
                         }
                     }
                     ul {
@@ -133,14 +132,13 @@
     }
 }
 //  responsive
-@media (max-width:1536px) {
+@media (max-width: 1536px) {
     .resume {
         .container {
-
-            .button2{
+            .button2 {
                 display: none;
             }
-            .button1{
+            .button1 {
                 display: block;
             }
         }
@@ -149,17 +147,17 @@
 @media (max-width: 991px) {
     .resume {
         .container {
-            .nav_list{
+            .nav_list {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
             .row {
                 flex-direction: column;
                 @include flex(center, center);
             }
-            .button2{
+            .button2 {
                 display: none;
             }
-            .button1{
+            .button1 {
                 display: block;
             }
         }
@@ -168,13 +166,13 @@
 @media (max-width: 768px) {
     .resume {
         .container {
-            .nav_list{
+            .nav_list {
                 grid-template-columns: 1fr;
             }
-            .button1{
+            .button1 {
                 display: none;
             }
-            .button2{
+            .button2 {
                 display: block;
             }
         }
