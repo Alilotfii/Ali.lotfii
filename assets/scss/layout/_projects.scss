@@ -23,13 +23,6 @@
                 margin: 0 auto;
                 cursor: pointer;
                 border-radius: 1rem;
-                img {
-                    width: 100%;
-                    transition: 1s;
-                    &:hover {
-                        transform: translateY(calc(300px - 100%));
-                    }
-                }
             }
             .content {
                 margin-top: 1.5rem;
@@ -59,6 +52,15 @@
                     margin-top: 1rem;
                     color: #e1e1e1;
                     font-size: 1.3rem;
+                }
+            }
+            &:hover {
+                .image {
+                    img {
+                        transition: 1s;
+                        width: 100%;
+                        transform: translateY(calc(300px - 100%));
+                    }
                 }
             }
         }

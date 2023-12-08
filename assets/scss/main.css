@@ -7,6 +7,8 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }
 
 body {
@@ -354,13 +356,6 @@ header .nav_bar .bottom {
   cursor: pointer;
   border-radius: 1rem;
 }
-.projects .container .col .image img {
-  width: 100%;
-  transition: 1s;
-}
-.projects .container .col .image img:hover {
-  transform: translateY(calc(300px - 100%));
-}
 .projects .container .col .content {
   margin-top: 1.5rem;
 }
@@ -390,6 +385,11 @@ header .nav_bar .bottom {
   margin-top: 1rem;
   color: #e1e1e1;
   font-size: 1.3rem;
+}
+.projects .container .col:hover .image img {
+  transition: 1s;
+  width: 100%;
+  transform: translateY(calc(300px - 100%));
 }
 
 .resume {
