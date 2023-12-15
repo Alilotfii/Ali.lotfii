@@ -28,10 +28,12 @@
                 .title {
                     padding-bottom: 1rem;
                     font-size: 2rem;
+                    color: $blue-color;
                 }
                 .text {
                     font-size: 1.3rem;
                     line-height: 2.5rem;
+                    color: $text-color;
                 }
                 &:hover {
                     background: linear-gradient(0deg, $black-color, black 80%);

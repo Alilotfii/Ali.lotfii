@@ -39,7 +39,7 @@ img {
 .subject h2 {
   font-size: 4rem;
   padding-bottom: 3rem;
-  color: #fff;
+  color: #D1D5DB;
 }
 
 .subject h4 {
@@ -90,7 +90,7 @@ img {
   border: none;
 }
 .btn a {
-  color: #C4CFDE;
+  color: #D1D5DB;
 }
 .btn:hover {
   border: 0.1rem solid #ff014f;
@@ -177,7 +177,9 @@ header .nav_bar .bottom {
   color: #fff;
 }
 .Home .container .content h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #b5becd;
+  font-weight: normal;
 }
 .Home .container .content h1 {
   font-size: 4.5rem;
@@ -190,8 +192,10 @@ header .nav_bar .bottom {
   font-size: 3.5rem;
 }
 .Home .container .content .text {
-  font-size: 1.5rem;
   line-height: 3rem;
+  font-size: 1.7rem;
+  color: #b5becd;
+  font-weight: normal;
 }
 .Home .container .content .items {
   margin-top: 4rem;
@@ -199,9 +203,10 @@ header .nav_bar .bottom {
   gap: 6rem;
 }
 .Home .container .content .items .item h3 {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-size: 1.7rem;
+  color: #b5becd;
+  font-weight: normal;
+  padding-bottom: 1.5rem;
 }
 .Home .container .content .items .item a {
   padding: 15px 20px;
@@ -321,10 +326,12 @@ header .nav_bar .bottom {
 .features .container .row .col .title {
   padding-bottom: 1rem;
   font-size: 2rem;
+  color: #D1D5DB;
 }
 .features .container .row .col .text {
   font-size: 1.3rem;
   line-height: 2.5rem;
+  color: #b5becd;
 }
 .features .container .row .col:hover {
   background: linear-gradient(0deg, #212428, black 80%);
@@ -355,6 +362,9 @@ header .nav_bar .bottom {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 1rem;
+}
+.projects .container .col .image img {
+  transition: 1s;
 }
 .projects .container .col .content {
   margin-top: 1.5rem;
@@ -387,7 +397,6 @@ header .nav_bar .bottom {
   font-size: 1.3rem;
 }
 .projects .container .col:hover .image img {
-  transition: 1s;
   width: 100%;
   transform: translateY(calc(300px - 100%));
 }
@@ -592,12 +601,12 @@ header .nav_bar .bottom {
   font-weight: 100;
 }
 .testimonial .container .row .col_image .name_title {
-  color: #C4CFDE;
+  color: #D1D5DB;
   font-size: 2.5rem;
 }
 .testimonial .container .row .col_image .job_title {
   font-size: 1.3rem;
-  color: #C4CFDE;
+  color: #D1D5DB;
 }
 .testimonial .container .row .col_content {
   grid-column: span 4/span 4;
@@ -616,7 +625,7 @@ header .nav_bar .bottom {
 .testimonial .container .row .col_content .title .title_t {
   line-height: 3rem;
   font-size: 2.2rem;
-  color: #C4CFDE;
+  color: #D1D5DB;
 }
 .testimonial .container .row .col_content .title .text {
   padding: 0.5rem;
@@ -636,7 +645,7 @@ header .nav_bar .bottom {
   padding-top: 2rem;
   font-size: 1.4rem;
   line-height: 2.5rem;
-  color: #C4CFDE;
+  color: #D1D5DB;
 }
 
 @media (max-width: 991px) {
@@ -650,7 +659,7 @@ header .nav_bar .bottom {
     display: none;
   }
 }
-.contact .container {
+.contact {
   border-bottom: 0.1rem solid black;
   margin-top: 5rem;
 }
@@ -664,10 +673,13 @@ header .nav_bar .bottom {
   padding: 2rem;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
   color: #9399a5;
+  flex-direction: column;
+  display: grid;
+  align-content: space-evenly;
 }
 .contact .container .col_image .title_col_image {
   font-size: 3rem;
-  margin-top: 3rem;
+  color: #fff;
 }
 .contact .container .col_image .job_col_image {
   margin: 1rem 0;
@@ -680,10 +692,12 @@ header .nav_bar .bottom {
 .contact .container .col_image .type_col_image {
   font-size: 1.5rem;
   padding: 0.5rem 0;
-  margin-top: 1rem;
+  color: #b5becd;
+}
+.contact .container .col_image .type_col_image span {
+  color: #D1D5DB;
 }
 .contact .container .col_image .icons {
-  margin-top: 2rem;
   display: flex;
   gap: 2rem;
   transition: 0.9s;
@@ -799,7 +813,7 @@ header .nav_bar .bottom {
 .footer .center {
   text-align: center;
   font-size: 1.5rem;
-  color: #C4CFDE;
+  color: #D1D5DB;
   padding: 2rem 0;
 }
 .footer .center span {
@@ -821,7 +835,7 @@ header .nav_bar .bottom {
 }
 .footer .container .row .col a {
   margin-bottom: 1rem;
-  color: #C4CFDE;
+  color: #D1D5DB;
 }
 .footer .container .row .col a:hover {
   color: #ff014f;

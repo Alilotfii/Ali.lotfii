@@ -11,7 +11,9 @@
             flex: 1;
             color: #fff;
             h4 {
-                font-size: 1.5rem;
+                font-size: 2rem;
+                color: #b5becd;
+                font-weight: normal;
             }
             h1 {
                 font-size: 4.5rem;
@@ -26,8 +28,10 @@
                 }
             }
             .text {
-                font-size: 1.5rem;
                 line-height: 3rem;
+                font-size: 1.7rem;
+                color: $text_color;
+                font-weight: normal;
             }
             .items {
                 margin-top: 4rem;
@@ -35,9 +39,10 @@
                 gap: 6rem;
                 .item {
                     h3 {
-                        padding-bottom: 1rem;
-                        font-size: 1.5rem;
-                        font-weight: 100;
+                        font-size: 1.7rem;
+                        color: $text_color;
+                        font-weight: normal;
+                        padding-bottom: 1.5rem;
                     }
                     a {
                         padding: 15px 20px;
@@ -93,7 +98,6 @@
                             }
                         }
                         a {
-                          
                             &:hover {
                                 animation: shake 0.5s;
                                 animation-iteration-count: infinite;

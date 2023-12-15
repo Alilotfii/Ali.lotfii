@@ -1,8 +1,8 @@
 @use "../abstracts/" as *;
 .contact {
+    border-bottom: 0.1rem solid black;
+    margin-top: 5rem;
     .container {
-        border-bottom: 0.1rem solid black;
-        margin-top: 5rem;
         .row {
             display: flex;
             gap: 3rem;
@@ -13,9 +13,12 @@
             padding: 2rem;
             box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
             color: #9399a5;
+            flex-direction: column;
+            display: grid;
+            align-content: space-evenly;
             .title_col_image {
                 font-size: 3rem;
-                margin-top: 3rem;
+                color: #fff;
             }
             .job_col_image {
                 margin: 1rem 0;
@@ -28,10 +31,12 @@
             .type_col_image {
                 font-size: 1.5rem;
                 padding: 0.5rem 0;
-                margin-top: 1rem;
+                color: $text-color;
+                span {
+                    color: $blue-color;
+                }
             }
             .icons {
-                margin-top: 2rem;
                 display: flex;
                 gap: 2rem;
                 transition: 0.9s;

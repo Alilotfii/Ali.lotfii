@@ -23,6 +23,9 @@
                 margin: 0 auto;
                 cursor: pointer;
                 border-radius: 1rem;
+                img {
+                    transition: 1s;
+                }
             }
             .content {
                 margin-top: 1.5rem;
@@ -57,7 +60,6 @@
             &:hover {
                 .image {
                     img {
-                        transition: 1s;
                         width: 100%;
                         transform: translateY(calc(300px - 100%));
                     }
